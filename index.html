@@ -1,0 +1,130 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<style>
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: blue;
+font-family: sans-serif;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: white;
+}
+
+.btn-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.btn {
+background-color: blue;
+color: white;
+font-weight: 600;
+padding: 12px 30px;
+}
+
+main {
+padding: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.content {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 20px;
+}
+
+main .h1 {
+background-color: rgb(206, 235, 206);
+padding: 30px;
+text-align: center;
+width: 100%;
+}
+
+main .welcome,.images {
+background-color: rgb(206, 235, 206);
+padding: 20px;
+width: 100%;
+height: 50vh;
+}
+
+main .images {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+place-items: center;
+gap: 20px;
+}
+
+main .images div {
+background-color: blue;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+main .welcome {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+}
+
+.fill {
+background-image: url('messi image.jpg');
+}
+
+</style>
+<header>
+<div class="btn">LOGO</div>
+<div class="btn-container">
+<div class="btn">CONTAINER 1</div>
+<div class="btn">CONTAINER 2</div>
+</div>
+</header>
+
+<main>
+<h1 class="h1">THIS IS GROUP 1</h1>
+<div class="content">
+<div class="welcome">
+<h1>WELCOME</h1>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus autem alias laudantium culpa dignissimos incidunt nihil facilis non iste repellat dolore consequuntur, eius debitis minus? Doloremque possimus iure expedita.
+</p>
+</div>
+<div class="images">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div class="fill">4</div>
+</div>
+</div>
+</main>
+</body>
+</html>
